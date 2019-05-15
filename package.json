@@ -1,0 +1,19 @@
+{
+  "name": "reactpractice",
+  "version": "1.0.0",
+  "description": "Practice react programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felixle96/reactpractice.git"
+  },
+  "author": "Felix Le",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felixle96/reactpractice/issues"
+  },
+  "homepage": "https://github.com/felixle96/reactpractice#readme"
+}
