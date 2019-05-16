@@ -1,0 +1,27 @@
+.calculator {
+    border: solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 70%;
+}
+
+.calculator__button {
+    box-sizing: border-box;
+    padding: 10px 40px;
+    margin: 5px;
+    width: 100px;
+    border-radius: 7px;
+    background-color: lightgreen;
+    text-align: center;
+    border-width: 0;
+}
+
+.calculator__display-bar {
+    margin-bottom: 15px;
+}
+
+.calculator__display-bar > input {
+    padding: 10px;
+    width: 50%;
+}
