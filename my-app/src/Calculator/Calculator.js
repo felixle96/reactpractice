@@ -28,6 +28,11 @@ class Calculator extends React.Component {
     }
 
     onButtonPress(buttonValue) {
+        console.log('buttonValue: ', buttonValue);
+        if (buttonValue === "7") {
+            throw new Error("I pressed 7!");   
+        }
+
         this.setState((state) => {
             return {
                 displayValue: state.displayValue + buttonValue

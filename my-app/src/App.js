@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 import Calculator from "./Calculator/Calculator";
+import ErrorBoundary from "./Components/ErrorBoundary";
 
 function App() {
   return (
@@ -22,7 +23,9 @@ function App() {
         </a>
       </header>
       <main>
-        <Calculator></Calculator>
+        <ErrorBoundary>
+          <Calculator></Calculator>
+        </ErrorBoundary>
       </main>
     </div>
   );
