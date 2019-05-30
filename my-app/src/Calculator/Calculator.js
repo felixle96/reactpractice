@@ -19,6 +19,7 @@ class Calculator extends React.Component {
         }
 
         this.onDisplayBarChange = this.onDisplayBarChange.bind(this);
+        this.onButtonPress = this.onButtonPress.bind(this);
     }
 
     onDisplayBarChange(displayValue) {
@@ -29,9 +30,6 @@ class Calculator extends React.Component {
 
     onButtonPress(buttonValue) {
         console.log('buttonValue: ', buttonValue);
-        if (buttonValue === "7") {
-            throw new Error("I pressed 7!");   
-        }
 
         this.setState((state) => {
             return {
@@ -42,12 +40,16 @@ class Calculator extends React.Component {
 
     render() {
         console.log('displayValue: ', this.state.displayValue);
+        if (this.state.displayValue.endsWith('7')) {
+            throw new Error("I pressed 7!");   
+        }
+
         return (
             <div className="calculator">
                 <DisplayBar onDisplayBarChange={this.onDisplayBarChange}
                     displayValue={this.state.displayValue}>
                 </DisplayBar>
-                <Keypad buttons={buttons} cols="4"></Keypad>
+                <Keypad buttons={buttons} cols="4" onButtonPress={this.onButtonPress}></Keypad>
             </div>
         );
     }

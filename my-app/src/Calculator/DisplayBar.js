@@ -12,9 +12,10 @@ class DisplayBar extends React.Component {
     }
 
     render() {
+        console.log('DisplayBar render(): ', this.props.displayValue);
         return (
             <div className="calculator__display-bar">
-                <input type="text" value={this.props.displayText}
+                <input type="text" value={this.props.displayValue}
                     onChange={this.handleDisplayBarChange}>
                 </input>
             </div>

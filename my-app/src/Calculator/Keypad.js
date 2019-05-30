@@ -15,7 +15,7 @@ class Keypad extends React.Component {
 
             // add button to list of buttons to render
             buttons.push(
-                <Button key={index} buttonValue={buttonValue}></Button>
+                <Button key={index} buttonValue={buttonValue} onButtonPress={this.props.onButtonPress}></Button>
             )
         });
 
